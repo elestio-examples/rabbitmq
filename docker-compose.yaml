@@ -1,0 +1,14 @@
+version: '3'
+services:
+  redis:
+    image: rabbitmq:${SOFTWARE_VERSION_TAG}
+    restart: always    
+    env_file:
+      - .env
+    volumes:
+      - ./data/:/var/lib/rabbitmq/
+      - ./log/:/var/log/rabbitmq/
+    ports:
+      - 5672:5672
+      - 172.17.0.1:15672:15672
+      
