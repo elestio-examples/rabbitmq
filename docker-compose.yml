@@ -3,7 +3,6 @@ services:
   rabbitmq:
     image: rabbitmq:${SOFTWARE_VERSION_TAG}
     restart: always 
-    user: 0:0   
     env_file:
       - .env
     volumes:
