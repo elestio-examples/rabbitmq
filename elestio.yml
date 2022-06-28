@@ -6,9 +6,9 @@ ports:
     targetIP: "172.17.0.1"
     public: true
     path: "/"
-    isAuth: true
-    login: "root"
-    password: "random_password"
+    isAuth: false
+    login: ""
+    password: ""
   - protocol: "TCP"
     targetProtocol: "TCP"
     listeningPort: "25672"
