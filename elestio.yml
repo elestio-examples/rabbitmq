@@ -9,12 +9,6 @@ ports:
     isAuth: false
     login: ""
     password: ""
-  - protocol: "TCP"
-    targetProtocol: "TCP"
-    listeningPort: "25672"
-    targetIP: "172.17.0.1"
-    targetPort: "5672"
-    public: true
 environments:
   - key: "SOFTWARE_VERSION_TAG"
     value: "latest"
