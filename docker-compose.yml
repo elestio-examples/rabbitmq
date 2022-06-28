@@ -1,6 +1,6 @@
 version: '3'
 services:
-  redis:
+  rabbitmq:
     image: rabbitmq:${SOFTWARE_VERSION_TAG}
     restart: always 
     user: 0:0   
