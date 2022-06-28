@@ -30,7 +30,7 @@ config:
   buildDir: "/"
   runCommand: "docker-compose up -d"
 lifeCycleConfig:
-  preInstallCommand: ""./scripts/preInstall.sh""
+  preInstallCommand: "./scripts/preInstall.sh"
   postInstallCommand: "./scripts/postInstall.sh"
   preBackupCommand: "./scripts/preBackup.sh"
   postBackupCommand: "./scripts/postBackup.sh"
