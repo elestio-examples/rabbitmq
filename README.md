@@ -18,13 +18,13 @@ You can connect to your instance with the RabbitMQ Web UI:
 RabbitMQ connection details:
 
     Host: [CI_CD_DOMAIN]
-    Port: 5672
+    Port: 25672
     Login: $RABBITMQ_DEFAULT_USER (set in env var)
     Password: $RABBITMQ_DEFAULT_PASS (set in env var)
 
 Service URI:
     
-    amqp://RABBITMQ_DEFAULT_USER:RABBITMQ_DEFAULT_PASS@CI_CD_DOMAIN:5672
+    amqp://RABBITMQ_DEFAULT_USER:RABBITMQ_DEFAULT_PASS@CI_CD_DOMAIN:25672
 
 
 
@@ -35,7 +35,7 @@ First install the NPM package: `npm install amqplib`
 
     var amqp = require('amqplib/callback_api');
 
-    amqp.connect('amqp://RABBITMQ_DEFAULT_USER:RABBITMQ_DEFAULT_PASS@CI_CD_DOMAIN:5672', function(error0, connection) {
+    amqp.connect('amqp://RABBITMQ_DEFAULT_USER:RABBITMQ_DEFAULT_PASS@CI_CD_DOMAIN:25672', function(error0, connection) {
         if (error0) {
             throw error0;
         }
