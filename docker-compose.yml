@@ -5,6 +5,9 @@ services:
     restart: always 
     env_file:
       - .env
+    environment:
+      - RABBITMQ_DEFAULT_USER=${ADMIN_LOGIN}
+      - RABBITMQ_DEFAULT_PASS=${ADMIN_PASSWORD}
     volumes:
       - ./data/:/var/lib/rabbitmq/
       - ./log/:/var/log/rabbitmq/
