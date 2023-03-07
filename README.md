@@ -24,7 +24,7 @@ RabbitMQ connection details:
 
 Service URI:
     
-    amqp://[ADMIN_LOGIN]:[ADMIN_PASSWORD]@CI_CD_DOMAIN:25672
+    amqp://[ADMIN_LOGIN]:[ADMIN_PASSWORD]@[CI_CD_DOMAIN]:25672
 
 
 
