@@ -35,7 +35,7 @@ First install the NPM package: `npm install amqplib`
 
     var amqp = require('amqplib/callback_api');
 
-    amqp.connect('amqp://[ADMIN_LOGIN]:[ADMIN_PASSWORD]@CI_CD_DOMAIN:25672', function(error0, connection) {
+    amqp.connect('amqp://[ADMIN_LOGIN]:[ADMIN_PASSWORD]@[CI_CD_DOMAIN]:25672', function(error0, connection) {
         if (error0) {
             throw error0;
         }
