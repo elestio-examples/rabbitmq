@@ -1,0 +1,16 @@
+version: '3.3'
+services:
+  rabbitmq:
+    image: elestio4test/rabbitmq-management:${SOFTWARE_VERSION_TAG}
+    restart: always 
+    env_file:
+      - .env
+    environment:
+      - RABBITMQ_DEFAULT_USER=${ADMIN_LOGIN}
+      - RABBITMQ_DEFAULT_PASS=${ADMIN_PASSWORD}
+    volumes:
+      - ./data/:/var/lib/rabbitmq/
+      - ./log/:/var/log/rabbitmq/
+    ports:
+      - 172.17.0.1:5672:5672
+      - 172.17.0.1:15672:15672
