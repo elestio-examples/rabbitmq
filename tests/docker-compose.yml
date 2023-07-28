@@ -1,7 +1,7 @@
 version: '3.3'
 services:
   rabbitmq:
-    image: elestio4test/rabbitmq-management:${SOFTWARE_VERSION_TAG}
+    image: elestio4test/rabbitmq:${SOFTWARE_VERSION_TAG}
     restart: always 
     env_file:
       - .env
