@@ -57,7 +57,7 @@ Here are some example snippets to help you get started creating a container.
     services:
         rabbitmq:
             image: elestio4test/rabbitmq-management:${SOFTWARE_VERSION_TAG}
-            restart: always 
+            restart: always
             env_file:
                 - .env
             environment:
@@ -70,6 +70,13 @@ Here are some example snippets to help you get started creating a container.
                 - 172.17.0.1:5672:5672
                 - 172.17.0.1:15672:15672
 
+### Environment variables
+
+|       Variable       | Value (example) |
+| :------------------: | :-------------: |
+| SOFTWARE_VERSION_TAG |     latest      |
+|     ADMIN_LOGIN      |      root       |
+|    ADMIN_PASSWORD    |  your-password  |
 
 # Maintenance
 
