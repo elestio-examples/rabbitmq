@@ -22,6 +22,8 @@ environments:
     value: "root"
   - key: "ADMIN_PASSWORD"
     value: "random_password"
+  - key: "DOMAIN"
+    value: "[CI_CI_DOMAIN]"
 config:
   runTime: "dockerCompose"
   version: ""
