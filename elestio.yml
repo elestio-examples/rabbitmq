@@ -17,11 +17,11 @@ ports:
     public: true
 environments:
   - key: "SOFTWARE_VERSION_TAG"
-    value: "3-management"
+    value: "latest"
   - key: "ADMIN_LOGIN"
     value: "root"
   - key: "ADMIN_PASSWORD"
-    value: "random_password"      
+    value: "random_password"
 config:
   runTime: "dockerCompose"
   version: ""
@@ -43,4 +43,3 @@ webUI:
     label: "RabbitMQ"
     username: "[ADMIN_LOGIN]"
     password: "[ADMIN_PASSWORD]"
-   
