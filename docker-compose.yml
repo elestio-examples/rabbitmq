@@ -9,6 +9,7 @@ services:
     environment:
       - RABBITMQ_DEFAULT_USER=${ADMIN_LOGIN}
       - RABBITMQ_DEFAULT_PASS=${ADMIN_PASSWORD}
+      - RABBITMQ_NODENAME=rabbit
     volumes:
       - ./data/:/var/lib/rabbitmq/
       - ./log/:/var/log/rabbitmq/
